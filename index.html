@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Portfolio</title>
+        <style>
+            /* set default font and background colors*/
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                color: #333;
+                background-color: #f5f5f5;
+            }
+            /*Style the header*/
+            header {
+                background-color: #333;
+                color: #fff;
+                padding: 20px;
+            }
+            header h1 {
+                font-size: 36px;
+                margin: 0;
+            }
+            header p {
+                font-size: 18px;
+                margin: 0;
+            }
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            nav li {
+                display: inline-block;
+                margin-right: 20px;
+            }
+            nav a {
+                color: #fff;
+                text-decoration: none;
+            }
+            /*Style the secions*/
+            section {
+                padding: 50px;
+            }
+            section h2 {
+                font-size: 30px;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            section li {
+                flex-basis: calc(50%-20px);
+                margin-right: 40px;
+                margin-bottom: 40px;
+                background-color: #fff;
+                box-shadow: 0 2px 6px rgba(red, green, blue, alpha);
+                padding: 20px;
+            }
+            section li img {
+                max-width: 100%;
+            }
+            section li h3 {
+                font-size: 24px;
+                max-width: 0;
+            }
+            section li p {
+                font-size: 16px;
+                margin-bottom: 0;
+            }
+            /*Style the form*/
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+            form label {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            form input, form textarea {
+                font-size: 18px;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+            form textarea {
+                height: 200px;
+            }
+            form button {
+                font-size: 18px;
+                background-color: #333;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                padding: 10px;
+                cursor: pointer;
+                margin-top: 20px;
+            }
+            form button:hover {
+                background-color: #666;
+            }
+            /*Style the footer*/
+            footer {
+                background-color: #333;
+                color: #fff;
+                padding: 20px;
+                text-align: center;
+            }
+            footerp {
+                font-size: 18px;
+                margin: 0;
+            }
+            footer a {
+                color: #fff;
+                text-decoration: none;
+            }
+            /*Make the page responsive*/
+            @media screen and (max-width:600px) { 
+                nav li {
+                    display: block;
+                    margin-bottom: 10px;
+                }
+                section li {
+                    flex-basis: 100%;
+                    margin-right: 0;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <h1>ANYIACHE JENNIFER ANU</h1>
+            <p>Web Developer</p>
+        </header>
+        <section id="Home">
+            <h2>Welcome To My Portfolio!</h2>
+            <p>I am a web developer with experience in HTML, CSS and JavaScript.
+             I'm passionate in creating responsive and user-friendly websites. 
+            </p>
+            <a href="Projects">View my work</a>
+        </section>
+        <section id="Projects">
+            <h2>My Projects</h2>
+            <ul>
+                <li>
+                    <img src="project1.png" alt="Project 1">
+                    <h3>Bus Ticketing System</h3>
+                    <p>This is the a bus ticketing system called GO TRIP
+                        Go Trip is aimed at providing bus tickets to people, such that you can be at any remote location and still book a bus for your long and short travels.
+                        when a passenger comes to go trip all he/she does is enter your current location, destination, number of tickets, the date of travel and the agency you will
+                        like to use and boom it generates a ticket for you. its solves the problems of long queue, saves time and its so convinent for everyone.
+                    </p>
+                </li>
+                <li>
+                    <img src="project2.png" alt="Project 2">
+                    <h3>Queuing System</h3>
+                    <p>This online queuing system helps banks, identity creating offices to give numbers and order to their customers.
+                    Here a user can just stay at their remote loactions and pick and number, date, and time when to come to the bank or go to make their ID rather 
+                    than going to spend hours waiting on a long line. 
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section id="About">
+            <h2>About Me</h2>
+            <p> My name is ANYIACHE JENNIFER ANU and I am a web developer based in Buea.
+                Am currently an under graduate in the department of sotfware engineering in the university of CHITECHMA Buea.
+                I did 2 months intensive internship at iknite studio Buea, where i was taught on the basics in HTML, CSS and JavaScript.
+                and also how to create and host our own GitHub account.
+            </p>
+            <p>
+                During my free times, I learn on new topics concerning my field of studies,
+                research on ways to improve my skills in the tech field and also love cooking new, and foreign dishes. 
+            </p>
+        </section>
+        <section id="Contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="Name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <br>
+                <button type="submit">Send Message</button>
+            </form>
+            <p>You can reach out to me at Jennyanyi19@gmail.com or on social media:</p>
+            <ul>
+                <li>
+                    <a href="https://GitHub.com/Jenniferanu">GitHub</a>
+                </li>
+                <br>
+                <li>
+                    <a href="https://LinkedIn.com/Anujenny">LinkedIn</a>
+                </li>
+                <br>
+                <li>
+                    <a href="https://Snapchat.com/jennyanu001">Snapchat</a>
+                </li>
+                <br>
+                <li>
+                    <a href="https://TikTok.com/prettyanus001">TikTok</a>
+                </li>
+            </ul>
+        </section>
+
+    </body>
+</html>
